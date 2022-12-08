@@ -1,0 +1,66 @@
+body {
+    transition: all 1s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.aside {
+    width: 90px;
+    background-color: #d3cfcf00;
+    position: fixed;
+    right: -100px;
+    top: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 1s;
+    top: 50px;
+    color: white;
+}
+
+.asideShow {
+    right: 20px;
+}
+
+.aside a.ham {
+    position: absolute;
+    left: -60px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    color: white;
+    background-image: url(../img/menu_open_white.png);
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.aside ul {
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.aside ul li {}
+
+.aside ul li a {
+    display: block;
+    color: white;
+}
+
+header ul.gnb {
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 100px;
+    position: absolute;
+    top: 70px;
+    right: -160px;
+    z-index: 5;
+}
+
+header ul.gnb li {}
+
+header ul.gnb a {
+    color: white;
+}
+
+.over {
+    color: red;
+}

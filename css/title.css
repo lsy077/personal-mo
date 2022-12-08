@@ -1,0 +1,88 @@
+#title {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    background-image: url(../img/pomain_sub_visual_bg.jpg);
+    height: 100%;
+}
+
+.wrap {}
+
+#title .block {
+    display: flex;
+    position: absolute;
+    bottom: -80px;
+    left: 596px;
+    gap: 40px;
+}
+
+.scroll {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0;
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 20px);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #bcbaba;
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes updown {
+    0% {}
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {}
+}
+
+.scroll::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation-name: down1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+}
+
+.scroll::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation-name: down1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down1 {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px) rotate(45deg);
+        opacity: 1;
+    }
+}

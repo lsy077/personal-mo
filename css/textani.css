@@ -1,0 +1,107 @@
+     html {
+       height: 100%;
+     }
+
+     /*       body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      } */
+     .scene {
+       width: auto;
+       height: auto;
+       perspective: 600px;
+       /*! padding: 359px; */
+       position: absolute;
+       right: 350px;
+       bottom: 300px;
+     }
+
+     .cube {
+       position: relative;
+       width: 700px;
+       height: 300px;
+       transform-style: preserve-3d;
+       display: flex;
+       align-items: center;
+       gap: 40px;
+       font-size: 100px;
+       animation: cube 2.7s 1.7s 1;
+       justify-content: center;
+       padding-left: 357px;
+       font-weight: bold;
+       color: #b9b198;
+     }
+
+     /* @keyframes cube{
+  0%{
+    transform:rotate3d(1,1,0, 0deg);
+  }
+  100%{
+    transform:rotate3d(1,1,0, 180deg);
+  }
+}   */
+     .text {
+       /*! background-color: #dddcdc; */
+       width: 40px;
+       text-align: center;
+       animation: in 1s reverse forwards;
+       opacity: 0;
+     }
+
+     @keyframes in {
+       0% {
+         transform: translateZ(0px);
+         opacity: 1;
+       }
+
+       100% {
+         transform: translateZ(600px);
+         opacity: 0;
+       }
+     }
+
+     .text1 {
+       animation-delay: 0s;
+     }
+
+     .text2 {
+       animation-delay: 0.3s;
+     }
+
+     .text3 {
+       animation-delay: 0.6s;
+     }
+
+     .text4 {
+       animation-delay: 0.9s;
+     }
+
+     .text5 {
+       animation-delay: 1.2s;
+     }
+
+     .text6 {
+       animation-delay: 1.5s;
+     }
+
+     .text7 {
+       animation-delay: 1.8s;
+     }
+
+     .text8 {
+       animation-delay: 2.1s;
+     }
+
+     .text9 {
+       animation-delay: 2.4s;
+     }
+
+     .text10 {
+       animation-delay: 2.7s;
+     }

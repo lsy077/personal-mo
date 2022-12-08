@@ -1,0 +1,180 @@
+header {
+  width: 1200px;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+}
+
+h1 {
+  
+}
+
+header .wrap h1 a {
+  font-size: 0;
+  background-image: url(../img/lsy-logo.png);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.gnb {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 150px;
+  width: 60px;
+  position: relative;
+  position: absolute;
+  font-weight: bold;
+  left: 200px;
+  top: 10px;
+  transition: all 0.5s;
+/*   animation-name: por;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate; */
+  /* 와다가 또 다시 들어가게 */
+  color: #5fb0df;
+}
+
+.jump1 {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  color: yellow;
+  perspective: 217px;
+  transition: all 0.5s;
+  animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump2 {
+  position: absolute;
+  left: 444px;
+  top: 150px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump3 {
+  position: absolute;
+  left: 61px;
+  top: 200px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump4 {
+  position: absolute;
+  left: 290px;
+  top: 294px;
+  transition: all 0.5s;
+  animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump5 {
+  position: absolute;
+  left: 106px;
+  top: 470px;
+  color: yellow;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump6 {
+  position: absolute;
+  left: 275px;
+  top: 611px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump7 {
+  position: absolute;
+  left: 468px;
+  top: 448px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump8 {
+  position: absolute;
+  left: 460px;
+  top: 700px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.jump9 {
+  position: absolute;
+  left: 137px;
+  top: 790px;
+  transition: all 0.5s;
+   animation-name: por;
+   animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes por {
+  0% {
+    opacity: 0.6;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    opacity: 0.8;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(30PX);
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+    transform: rotateX(25deg);
+
+  }
+}
