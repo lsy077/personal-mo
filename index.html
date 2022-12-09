@@ -92,7 +92,7 @@
                 var c4p = $("#foot").offset().top;
                 console.log(c1p);
                 $(".c1").click(function () {
-                    $("html,body").animate({ scrollTop: c1p }, 2000); 
+                    $("html,body").animate({ scrollTop: c1p }, 2000);
                     return false;
                 });
                 $(".c2").click(function () {
@@ -107,27 +107,13 @@
                     $("html,body").animate({ scrollTop: c4p }, 2000);
                     return false;
                 });
-                $(".top").click(function(){
+                $(".top").click(function () {
                     $("html,body").animate({ scrollTop: 0 }, 2000);
                     return false;
                 });
             });
-    </script> 
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
-        .material-symbols-outlined {
-            font-variation-settings:
-                'FILL' 0,
-                'wght' 400,
-                'GRAD' 0,
-                'opsz' 48;
-            margin-top: 70px;
-            margin-left: 20px;
-        }
-    </style>
-    <!-- // slick링크 -->    
+    </script>
+    <!-- // slick링크 -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- // slick style 지정안 하도 자동으로 수평배치하고 좌우 이동할 수 있음-->
     <script>
@@ -145,7 +131,12 @@
                 });
             });
     </script>
-    
+    <script>
+        // main_visual 
+        $('.pomain .sub_visual .split_box span').bind('animationend webkitAnimationEnd MSAnimationEnd oAnimationEnd', function (e) {
+            $(this).addClass('on');
+        });
+    </script>
 </head>
 
 <body>
@@ -182,6 +173,7 @@
             <div class="jump8">I</div>
             <div class="jump9">O</div>
         </div>
+
     </header>
     <!--  타이틀영역 -->
     <div id="title">
@@ -204,7 +196,11 @@
             </div>
         </div>
         <a href="" class="scroll">scroll</a>
+        <div class="sub_visual" id="canvasDiv">
+            <canvas id="canvas" width="1903" height="1064"></canvas><span class="debug"></span>
+        </div>
     </div>
+
     <!-- luck -->
     <section id="luck">
         <div class="wrap">
@@ -280,7 +276,7 @@
             </div>
         </div>
     </section>
-    <!-- PORTFOLIO -->
+    <!-- PORTFOLIO 홈폐이지 제작수-->
     <section id="portfolio">
         <div class="bottom">
             <div class="wrap3">
@@ -330,6 +326,14 @@
             </div>
         </div>
     </section>
+    <!-- PADLET 대글 남기 -->
+    <section id="padlet">
+        <div class="padlet-memo">
+            <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/v4x8dvc9d3a57opw" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Padlet으로 만듦"></div></a></div></div>
+            <p class="memo">귀하의 소중한 한마디 <strong> -> </strong> </p>
+        </div>
+
+    </section>
     <!--  하단영역 -->
     <footer>
         <div id="foot">
@@ -351,5 +355,7 @@
         </div>
     </footer>
 </body>
+<!-- 물결표시 -->
+<script src="js/ripples_js06.js"></script>
 
 </html>

@@ -14,6 +14,7 @@ body {
     transition: all 1s;
     top: 50px;
     color: white;
+    z-index: 6;
 }
 
 .asideShow {

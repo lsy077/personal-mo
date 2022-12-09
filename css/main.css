@@ -496,3 +496,38 @@ figcaption {
 .slick-next{
     
 }
+#padlet{
+    
+}
+.padlet-memo{
+   
+    position: relative;
+}
+.memo{  
+    position: absolute;
+    bottom: 69px;
+    right: 90px;
+    font-size: 20px;   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.memo strong{    
+    color: #2e9edd;
+    animation-name: color;
+    animation-duration:2s;
+      animation-iteration-count:infinite;  
+    margin-left: 10px;
+}
+@keyframes color{
+    0%{color:red;
+    right: 90px;}
+    20%{color:orange;}
+    40%{color:yellow;}
+    60%{color:green;}
+    80%{color:aqua;}
+    100%{ color:peru;     
+        right: 50px;
+    }
+}
