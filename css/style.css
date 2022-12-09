@@ -52,10 +52,9 @@ header ul.gnb {
     gap: 100px;
     position: absolute;
     top: 70px;
-    right: -160px;
+    right: -400px;
     z-index: 5;
 }
-
 header ul.gnb li {}
 
 header ul.gnb a {
