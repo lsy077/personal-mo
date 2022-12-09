@@ -1,5 +1,5 @@
 
-var divParents = document.getElementById('canvasDiv');
+var divParents = document.getElementById('title');
 var canvas = document.createElement('canvas');
 // var debugDiv = document.createElement('span');
 canvas.setAttribute('width',divParents.offsetWidth);
