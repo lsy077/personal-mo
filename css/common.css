@@ -21,3 +21,29 @@
   margin-bottom: 20px;
   color: #555;
 }
+a:link{
+    color:black;
+}
+
+a:visited{
+    color:rgb(88, 86, 86);
+}
+a:hover{
+  color: #8740fd;
+}
+
+a:active{
+    color:rgb(240, 13, 183);
+}
+/*.center a:link{
+  color: #8740fd;
+} 
+.center a:hover{
+  color: red;
+}
+.center a:active{
+  color:rgb(240, 13, 183);
+}
+.center a:visited{
+  color:rgb(88, 86, 86);
+} */
