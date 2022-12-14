@@ -6,7 +6,7 @@ main {
 .me {
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding-top: 100px;
 }
 
 #about {
@@ -35,34 +35,15 @@ h2 {
 }
 
 #about h2 {
-    transform-style: preserve-3d;
-    transition: all 1s;
-    perspective: 600px;
-    position: relative;
+  
 }
 #about h2 i{    
-    display: block;
-    width: 50px;
-    height: 50px;
+  
 }
 h2 a {
-/*     animation-name: about; */
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
     display: block;
-text-align: center;
-}
-
-@keyframes about {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+    text-align: center;
+    padding-top: 50px;
 }
 
 h2 a strong {
@@ -74,63 +55,129 @@ h2 a strong {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 0;
-    left:580px;
-/*      animation-name: about; */
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    display: block;
+    top: 50px;
+    left:630px;
+}
+#about .list1{
+    
 }
 #about p {
+    line-height: 2;
     font-size: 20px;
-    line-height: 5;
-    z-index: 1;
 }
 
-/* #about p::before{
-    content:"";
-    width: 300px;
-    height: 300px;
-    background-color: #1253a4;
-    display: inline-block;
-    position: absolute;
-    top: -100px; 
-    left:-71px;
-    z-index: 0;
-} */
 #about ul {
-    line-height: 3;
-    display: flex;
-    flex-direction: column;
+    padding-top: 30px;
 }
 
-#about ul li {
-    font-size: 40px;
-    color: #b1adad;
-    font-weight: bold;
-/*     animation-name: school; */
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+#about ul li span{
+  margin-right: 30px;
+    display: inline-block;
+    border: 3px solid #3333;
+    width: 40px;
+    height: 40px;    
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  line-height: 1.5;
+}
+#about ul li{
+    line-height: 4;
+    position: relative;
+    font-size: 20px;
+}
+#about ul li:nth-child(1):after{
+   content:"";
+    width: 1px;
+    height:42px;
     display: block;
+    border: 3px solid #3333;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;   
+    position: absolute;
+    left: 19px;
+    top: 61px; 
 }
-
-@keyframes school {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+#about ul li:nth-child(2):after{
+    content:"";
+    width: 1px;
+    height:42px;
+    display: block;
+    border: 3px solid #3333;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;   
+    position: absolute;
+    left: 19px;
+    top: 61px; 
+}
+#about ul li:nth-child(3):after{
+    content:"";
+    width: 1px;
+    height:42px;
+    display: block;
+    border: 3px solid #3333;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom: transparent;   
+    position: absolute;
+    left: 19px;
+    top: 61px; 
 }
 
 #about ul li strong {
-    font-size: 20px;
-    color: #333;
+ 
 }
-
+#about .list2{    
+    display: inline-block;
+    width: 450px;
+    height:600px;
+    border: 1px solid #3333;    
+    text-align: center;
+    box-shadow: 25px 11px 6px #3333;
+    border-bottom-right-radius: 180px;
+    border-top-left-radius: 180px;
+    margin-left: 100px;
+    background-image: url(../img/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#about .list2 div{    
+    line-height: 3;
+    text-align: center;
+}
+#about .list2 h4{    
+    font-size: 40px;
+    color: white;
+    display:block;
+    border-top-left-radius: 20px;    
+    height: 337px;
+    width: 450px;
+}
+#about .list2 p{
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 3;
+}
+#about .year1{
+    display: none;
+}
+#about .year2{
+    display: none;
+}
+#about .year3{
+       display: none;
+}
+#about .year4{
+       display: none;
+}
+#about .pic{
+    display: inline-block;
+    height: 602px;
+    width: 452px;    
+}
 /* ---------------------------------------------skill------------------------------------------------ */
 #skill {
     font-family: 'Noto Sans KR', sans-serif;
@@ -141,6 +188,7 @@ h2 a strong {
     justify-content: center;
     position: relative;
     border: 1px solid #ddd;
+    margin-top: 100px;
 }
 #top_light{
     transition: all 1s;
@@ -209,8 +257,9 @@ h2 a strong {
 #skill h2 {
     /*! margin-bottom: 150px; */
     display: block;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     text-align: center;
+    padding-top: 50px;
 }
 #skill h2 strong{
     font-size: 100px;
@@ -349,6 +398,7 @@ h2 a strong {
 .center a {
     font-size: 9px;
     margin-bottom: 10px;
+    color: red;
 }
 .center a:link{
     color: red !important;;
@@ -382,13 +432,15 @@ h2 a strong {
 
 .wrap3 {
     position: relative;
+    transform: scale(0.9);
 }
 
 .wrap3 h2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    /*! padding-top: 50px; */
+    /*! padding-bottom: 50px; */
     display: block;
     text-align: center;
+    padding-bottom: 30px;
 }
 .wrap3 h2 strong{
     font-size: 100px;
@@ -415,18 +467,20 @@ figure>div::before{
     font-size: 50px;
     width: 550px;
     height: 300px;
-    border: 1px solid #333;    
+    border: 1px solid;    
     border-radius: 20px;
     display: inline-block;
-    background-color:rgba(0,0,0,0.7);
+    background-color:white;
     transition: all 0.5s; 
     position: absolute;
     opacity: 0;
     line-height: 6;
-    /*! background-image: url(../img/click.gif); */
-    /*! background-size: contain; */
-    /*! background-repeat: no-repeat; */
-    /*! text-align: center; */
+    background-image: url(../img/icons8-tap-gesture.gif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-align: center;
+background-position-x: center; 
+    background-position-y: 157px;
 }
 figure:hover >div::before{
      opacity: 1;
@@ -458,7 +512,7 @@ figure:hover ul{
     top: 20px;
     line-height: 2;       
     z-index: 2;
-    color: white;
+    color: black;
     text-align: left;
    opacity: 0;
 }
@@ -525,8 +579,7 @@ figcaption {
 #padlet{
     
 }
-.padlet-memo{
-   
+.padlet-memo{   
     position: relative;
 }
 .memo{  
@@ -556,4 +609,13 @@ figcaption {
     100%{ color:peru;     
         right: 50px;
     }
+}
+
+.blue_button{
+    background-color: #2e9edd !important;
+    color:yellow;
+}
+
+.show{
+    display: block !important;
 }

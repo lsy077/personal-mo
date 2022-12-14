@@ -23,14 +23,15 @@ body {
 
 .aside a.ham {
     position: absolute;
-    left: -60px;
+    left: -90px;
     box-sizing: border-box;
     padding: 20px 20px;
     color: white;
-    background-image: url(../img/icons8-menu-64.png);
+    background-image: url(../img/menu_open_black.png);
     background-repeat: no-repeat;
     font-size: 0;
-    background-size: contain;
+    width: 300px;
+    height: 61px;
 }
 
 .aside ul {

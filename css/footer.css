@@ -21,13 +21,17 @@ footer {
 .thanks {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-
-.thanks h3 {
+.thanks2{
+  padding-top: 20px;
+}
+.thanks p2 {
   margin: 0 auto;
   font-size: 30px;
   line-height: 2;
+  text-align: center;
 }
 
 .address {
@@ -37,17 +41,21 @@ footer {
 }
 
 .address ul {}
-
+.address ul li {
+  color: #aaa;
+  padding-left: 200px;
+}
 .address ul li span {
   padding-bottom: 15px;
   font-size: 20px;
+  color: white;
 }
 
 #foot p {
-  padding: 20px;
-  /*! display: flex; */
-  /*! justify-content: center; */
-  text-align: center;
+  text-align: left;
+  font-size: 15px;
+  line-height: 2;
+  padding-bottom: 50px;
 }
 
 #foot strong {
@@ -68,4 +76,7 @@ footer {
   bottom: 116px;
   border-radius: 50%;
   line-height: 45px;
+}
+.thanks2 strong{
+  text-align: center;
 }

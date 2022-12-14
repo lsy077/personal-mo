@@ -37,7 +37,7 @@ header .wrap h1 a {
   position: absolute;
   font-weight: bold;
   left: 200px;
-  top: 10px;
+  top: 50px;
   transition: all 0.5s;
 /*   animation-name: por;
   animation-duration: 1.8s;
@@ -81,7 +81,7 @@ header .wrap h1 a {
 .jump3 {
   position: absolute;
   left: 61px;
-  top: 200px;
+  top: 180px;
   transition: all 0.5s;
    animation-name: por;
    animation-duration: 1s;
@@ -108,8 +108,8 @@ header .wrap h1 a {
 
 .jump5 {
   position: absolute;
-  left: 106px;
-  top: 470px;
+  left: 140px;
+  top: 400px;
   color: yellow;
   transition: all 0.5s;
    animation-name: por;
@@ -120,11 +120,10 @@ header .wrap h1 a {
     animation-delay: 0.3s;
    animation-fill-mode: forwards;
 }
-
 .jump6 {
   position: absolute;
-  left: 275px;
-  top: 611px;
+  left: 225px;
+  top: 544px;
   transition: all 0.5s;
    animation-name: por;
    animation-duration: 1s;
@@ -137,8 +136,8 @@ header .wrap h1 a {
 
 .jump7 {
   position: absolute;
-  left: 468px;
-  top: 448px;
+  left: 440px;
+  top: 410px;
   transition: all 0.5s;
    animation-name: por;
    animation-duration: 1s;
@@ -151,8 +150,8 @@ header .wrap h1 a {
 
 .jump8 {
   position: absolute;
-  left: 460px;
-  top: 700px;
+  left: 397px;
+  top: 640px;
   transition: all 0.5s;
    animation-name: por;
    animation-duration: 1s;
@@ -165,8 +164,8 @@ header .wrap h1 a {
 
 .jump9 {
   position: absolute;
-  left: 137px;
-  top: 790px;
+  left: 87px;
+  top: 730px;
   transition: all 0.5s;
    animation-name: por;
    animation-duration: 1s;
