@@ -27,8 +27,6 @@ body {
     box-sizing: border-box;
     padding: 20px 20px;
     color: white;
-    background-image: url(../img/menu_open_black.png);
-    background-repeat: no-repeat;
     font-size: 0;
     width: 40px;
     height: 61px;
@@ -43,6 +41,8 @@ body {
 
 .aside ul li a {
     display: block;
+    font-weight: bold;
+    line-height: 3;
 }
 
 header ul.gnb {
@@ -63,4 +63,48 @@ header ul.gnb a {
 
 .over {
     color: red;
+}
+.row .three{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /*! box-sizing: border-box; */
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    right: 109px;
+    z-index: 7;
+    top: 0;
+  }
+  
+  .hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+.hamburger.is-active .line:nth-child(1),
+.hamburger.is-active .line:nth-child(3){
+  width: 40px;
+}
+
+.hamburger.is-active .line:nth-child(1){
+  -webkit-transform: translateX(10px) rotate(45deg);
+  -ms-transform: translateX(10px) rotate(45deg);
+  -o-transform: translateX(10px) rotate(45deg);
+  transform: translateX(10px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3){
+  -webkit-transform: translateX(10px) rotate(-45deg);
+  -ms-transform: translateX(10px) rotate(-45deg);
+  -o-transform: translateX(10px) rotate(-45deg);
+  transform: translateX(10px) rotate(-45deg);
 }

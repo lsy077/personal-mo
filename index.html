@@ -39,7 +39,7 @@
         $(document).ready(
             function () {
                 // aside클릭 - 슬라이드인
-                $(".aside a.ham").click(
+                $(".hamburger").click(
                     function () {
                         $(".aside").toggleClass("asideShow");
                         return false;
@@ -87,7 +87,7 @@
                     }
                     highlight = !highlight;
                 });
-              //  메뉴클릭시 해당컨텐츠로 페이즈스크롤
+                //  메뉴클릭시 해당컨텐츠로 페이즈스크롤
                 var c1p = $("#about").offset().top;
                 var c2p = $("#skill").offset().top;
                 var c3p = $("#portfolio").offset().top;
@@ -112,6 +112,10 @@
                 $(".top").click(function () {
                     $("html,body").animate({ scrollTop: 0 }, 2000);
                     return false;
+                });
+                // 햄버그 효과
+                $(".hamburger").click(function () {
+                    $(this).toggleClass("is-active");
                 });
             });
     </script>
@@ -170,7 +174,17 @@
                     <li class="c4"><a href="">CONTACT</a></li>
                 </ul>
                 <div class="aside">
-                    <a href="" class="ham">메뉴보기</a>
+                    <div class="row cf">
+                        <a href="" class="ham">메뉴보기</a>
+                        <div class="three col">                            
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        </div>
+                   
                     <ul>
                         <li class="c1"><a href="">ABOUT</a></li>
                         <li class="c2"><a href="">SKILL</a></li>
@@ -190,9 +204,6 @@
             <div class="jump7">L</div>
             <div class="jump8">I</div>
             <div class="jump9">O</div>
-        </div>
-        <div>
-            
         </div>
     </header>
     <!--  타이틀영역 -->
@@ -253,24 +264,24 @@
                     </ul>
                 </div>
                 <div class="list2">
-                        <div class="pic">
-                            <div class="year1" data-n="1">
-                                <h4>2015</h4>
-                                <p>한양대학교 <span class="block">식품영양학과 석사 졸업</span></p>
-                            </div>
-                            <div class="year2" data-n="2">
-                                <h4>2018</h4>
-                                <p>(주)노바렉스<span class="block"> 건강기능식품원료 개발팀 및 해외영업팀 3년</span></p>
-                            </div>
-                            <div class="year3" data-n="3">
-                                <h4>2019</h4>
-                                <p>온라인 쇼핑몰 <span class="block"> 6개월 사이트 관리 및 제품 등록</span></p>
-                            </div>
-                            <div class="year4" data-n="4">
-                                <h4>2022</h4>
-                                <p>SBS아카데미컴퓨터아트학원 <span class="block"> UXUI 웹디자인너 양성과정 수령 -약 4개월</span></p>
-                            </div>
+                    <div class="pic">
+                        <div class="year1" data-n="1">
+                            <h4>2015</h4>
+                            <p>한양대학교 <span class="block">식품영양학과 석사 졸업</span></p>
                         </div>
+                        <div class="year2" data-n="2">
+                            <h4>2018</h4>
+                            <p>(주)노바렉스<span class="block"> 건강기능식품원료 개발팀 및 해외영업팀 3년</span></p>
+                        </div>
+                        <div class="year3" data-n="3">
+                            <h4>2019</h4>
+                            <p>온라인 쇼핑몰 <span class="block"> 6개월 사이트 관리 및 제품 등록</span></p>
+                        </div>
+                        <div class="year4" data-n="4">
+                            <h4>2022</h4>
+                            <p>SBS아카데미컴퓨터아트학원 <span class="block"> UXUI 웹디자인너 양성과정 수령 -약 4개월</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -369,7 +380,7 @@
                                 <li>index page 1</li>
                                 <li>redesign+coding,coding</li>
                                 <li>html, css, jquery, responsive,web standard </li>
-                                <li>3~4 day</li>                                
+                                <li>3~4 day</li>
                             </ul>
                             <p>수제맥주 홈폐이지 리뉴얼 연습</p>
                             <a href="https://lsy077.github.io/pf3-mo/" target="_blank">홈페이지 보기➔</a>
@@ -385,7 +396,7 @@
                                 <li>index page 1</li>
                                 <li>redesign+coding,coding</li>
                                 <li>html, css, jquery, responsive,web standard </li>
-                                <li>3~4 day</li>                                
+                                <li>3~4 day</li>
                             </ul>
                             <p>개인홈페이지 제작</p>
                             <a href="https://lsy077.github.io/personal/" target="_blank">홈페이지 보기➔</a>
@@ -450,13 +461,13 @@
 <script>
     $(".year1").addClass("show");
     $(".a1 span").addClass('blue_button');
-   $(".year_button").on('click', function () {
-       var dataN = $(this).attr("data-n");
-       $(this).children("span").addClass('blue_button');
-       $(this).parent().siblings().children().children("span").removeClass('blue_button');
-       $(".year" + dataN).addClass("show");
-       $(".year" + dataN).siblings().removeClass("show");        
-   });
+    $(".year_button").on('click', function () {
+        var dataN = $(this).attr("data-n");
+        $(this).children("span").addClass('blue_button');
+        $(this).parent().siblings().children().children("span").removeClass('blue_button');
+        $(".year" + dataN).addClass("show");
+        $(".year" + dataN).siblings().removeClass("show");
+    });
 </script>
 <!-- 물결표시 -->
 <script src="js/ripples_js06.js"></script>
