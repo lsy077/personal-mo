@@ -267,19 +267,19 @@
                     <div class="pic">
                         <div class="year1" data-n="1">
                             <h4>2015</h4>
-                            <p>한양대학교 <span class="block">식품영양학과 석사 졸업</span></p>
+                            <p>한양대학교 <span class="block">식품영양학과 대학원</span><span class="block">석사 졸업</span></p>
                         </div>
                         <div class="year2" data-n="2">
                             <h4>2018</h4>
-                            <p>(주)노바렉스<span class="block"> 건강기능식품원료 개발팀 및 해외영업팀 3년</span></p>
+                            <p>(주)노바렉스<span class="block"> 건강기능식품원료 개발팀 및 해외영업팀</span><span class="block">3년 근무</span></p>
                         </div>
                         <div class="year3" data-n="3">
                             <h4>2019</h4>
-                            <p>온라인 쇼핑몰 <span class="block"> 6개월 사이트 관리 및 제품 등록</span></p>
+                            <p>온라인 쇼핑몰 <span class="block">사이트 관리 및 제품 등록</span><span class="block">6개월 근무</span></p>
                         </div>
                         <div class="year4" data-n="4">
                             <h4>2022</h4>
-                            <p>SBS아카데미컴퓨터아트학원 <span class="block"> UXUI 웹디자인너 양성과정 수령 -약 4개월</span></p>
+                            <p>SBS아카데미컴퓨터아트학원 <span class="block"> UXUI 웹디자인너 양성과정 수령</span><span class="block">4개월 훈련</span></p>
                         </div>
                     </div>
                 </div>
@@ -468,6 +468,16 @@
         $(".year" + dataN).addClass("show");
         $(".year" + dataN).siblings().removeClass("show");
     });
+    $('.year','.a span').slick({
+                dots: false,
+                arrows: false,
+                fade: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1300,
+                autoplay: true,
+                autoplaySpeed: 1000
+            });
 </script>
 <!-- 물결표시 -->
 <script src="js/ripples_js06.js"></script>
