@@ -133,10 +133,10 @@ h2 a strong {
 #about .list2{    
     display: inline-block;
     width: 450px;
-    height:600px;
+    height:570px;
     border: 1px solid #3333;    
     text-align: center;
-    box-shadow: 25px 11px 6px #3333;
+    box-shadow: 30px 30px 6px #3333;
     border-bottom-right-radius: 180px;
     border-top-left-radius: 180px;
     margin-left: 100px;
