@@ -187,8 +187,7 @@ h2 a strong {
     display: flex;
     justify-content: center;
     position: relative;
-    border: 1px solid #ddd;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 #top_light{
     transition: all 1s;
@@ -196,6 +195,8 @@ h2 a strong {
     height: 100px;
     position: absolute;
     right: 25%;
+    top: 150px;
+    z-index: 7;
 }
 #top_light img {
     display: block;
@@ -418,6 +419,7 @@ h2 a strong {
     text-align: center;
     background-color: white;
     line-height: 1.2;    
+    cursor: pointer;
 }
 
 .center img {
@@ -515,6 +517,7 @@ figure:hover ul{
     color: black;
     text-align: left;
    opacity: 0;
+    cursor: pointer;
 }
 #portfolio figure ul strong{
     text-align: right;
